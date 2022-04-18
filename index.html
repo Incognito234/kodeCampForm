@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KodeCamp | Sign Up Form</title>
+</head>
+<body>
+    <div id="container">
+    <section id="form-section">
+            <form>
+                <h2 class="m-heading"><span id="kode">Kode</span><span>Camp</span> Registration</h2>
+                <p id="sub-heading">Please fill the form below to get on the KodeCamp train<p>
+                <!-- First Name -->
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Email Address" required>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input type="text" name="gender" id="gender" placeholder="Gender">
+                </div>
+
+                <!-- Educational Level -->
+                <div class="form-group">
+                    <label for="edLevel">Educational Level</label>
+                    <select name="edLevel" id="edLevel">
+                        <option value="default">Your Educational Level...</option>
+                        <option value="Secondary">Secondary</option>
+                        <option value="University">University</option>
+                        <option value="Masters">Masters</option>
+                    </select>
+                </div>
+
+                <!-- Laptop -->
+                <div class="form-group">
+                    <label for="laptop">Do you have a Laptop?</label>
+                   <div>
+                    <input type="radio" name="laptop" id="yes" value="Yes">
+                    <label for="yes">Yes</label>
+                   
+                        <input type="radio" name="laptop" id="no" value="No">
+                    <label for="no">No</label>
+                    </div>
+                </div>
+
+                <!-- Heard About kodeCamp Through... -->
+                <div class="form-group">
+                    <p>How did you hear about KodeCamp?</p>
+                    <div>
+                        <input type="radio" name="about" id="friends" value="friends">
+                    <label for="friends">Friends</label>
+                    
+                        <input type="radio" name="about" id="socials" value="socials">
+                    <label for="socials">Social Media</label>
+                   
+                        <input type="radio" name="about" id="school" value="school">
+                    <label for="school">School</label>
+                    
+                        <input type="radio" name="about" id="other" value="other">
+                    <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <!-- Tracks -->
+                <div class="form-group">
+                    <p>What track are you registering for?</p>
+                    <div>
+                        <input type="radio" name="track" id="web">
+                    <label for="web">Web Development</label>
+                                      
+                        <input type="radio" name="track" id="android">
+                        <label for="android">Android Development</label>
+                 
+                        <input type="radio" name="track" id="ui">
+                        <label for="ui">UI/UX Designs</label>
+                    </div>                  
+                </div>
+
+                <!-- Level -->
+                <div class="form-group">
+                    <p>What level are you on?</p>
+                    <div>
+                        <input type="radio" name="level" id="beginner">
+                        <label for="beginner">Beginner</label>
+
+                        <input type="radio" name="level" id="intermediate">
+                        <label for="intermediate">Intermediate</label>
+                    </div>  
+                </div>
+
+                <!-- About Yourself -->
+                <div class="form-group">
+                    <textarea name="message" id="message" placeholder="Tell Us About Yourself"></textarea>
+                </div>
+
+                <!-- Country -->
+                <div class="form-group">
+                    <p>What Country are you from?</p>
+                    <select name="country" id="country">
+                        <option value="default">Select Your Country...</option>
+                        <option value="angola">Angola</option>
+                        <option value="benin">Benin</option>
+                        <option value="bostwana">Bostwana</option>
+                        <option value="cameroon">Cameroon</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="liberia">Liberia</option>
+                        <option value="morocco">Morocco</option>
+                        <option value="nigeria">Nigeria</option>
+                    </select>
+                </div>
+                <!-- Submit -->
+                <div id="go">
+                    <input type="submit" value="Create Account" id="submit">
+                </div>
+                
+            </form>
+    </section>
+    </div>
+</body>
+</html>
